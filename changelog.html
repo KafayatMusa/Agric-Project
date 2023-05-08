@@ -10,46 +10,79 @@
     <link rel="stylesheet" href="./webfonts/">
 </head>
 <body>
-    <div class="container">
-        <nav>
-           <div class="logo">
-              <img src="./image/Logo.svg" alt="">
-           </div>
-           <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li>
-                 <div class="dropdown">
-                   <div class="dropbtn">
-                     <button>pages</button><i class="fa-solid fa-angle-down"></i>
-                   </div>
-                   <div class="dropdown-content">
-                    <a href="./portfolio.html">portfolio</a>
-                    <a href="./team.html">team</a>
-                    <a href="./service.html">service</a>
-                    <a href="./shopsingle.html">Shop Single</a>
-                    <a href="./page404.html">Page404</a>
-                   </div>
-                 </div>
-               </li>
-               <!-- <li><a href="#contact">Pages</a></li> -->
-               <li><a class="active" href="shop.html">Shop</a></li>
-               <li><a href="#about">Projects</a></li>
-               <li><a href="#about">News</a></li>
-             </ul>
-             <div class="search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-             </div>
-             <div class="cart">
-              <img src="./image/Cart Icon.png" alt="">
-              <p>Cart(0)</p>
-             </div>
-       </nav>
-   </div>
+  <div class="container">
+    <nav class="nav"> 
+       <div class="logo">
+         <a href="./mobile.html"><i class="fa fa-bars"></i></a>
+          <img src="./image/Logo.svg" alt="">
+       </div>
+      <div class="navLinks">
+       <ul>
+           <li><a class="active" href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li>
+             <div class="dropdown">
+               <div class="dropbtn">
+                 <button>pages</button><i class="fa-solid fa-angle-down"></i>
 
+               </div>
+               <div class="dropdown-content">
+                 <a href="./portfolio.html">portfolio</a>
+                 <a href="./team.html">team</a>
+                 <a href="./service.html">service</a>
+                 <a href="./shopsingle.html">Shop Single</a>
+               </div>
+             </div>
+           </li>
+           <!-- <li><a href="#contact">Pages</a></li> -->
+           <li><a href="shop.html">Shop</a></li>
+           <li>
+            <div class="dropdown">
+              <div class="dropbtn">
+                <button>News</button><i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <a href="./blog.html">Blog</a>
+                <a href="./changelog.html">Changelog</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./licenses.html">Licences</a>
+                <a href="./single.html">Single</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <div class="dropbtn">
+                <button>Project</button><i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="dropdown-content">
+                <a href="./page404.html">Page404</a>
+                <a href=".//recent.html">Recent</a>
+                <a href="./protected.html">Protected</a>
+                <a href="./quality.html">Quality</a>
+              </div>
+            </div>
+          </li>
+          <!-- <li><a href="#about">News</a></li> -->
+         </ul>
+       </div>
+         <div class="search">
+           <i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+      
+         <div class="cart">
+          <img src="./image/Cart Icon.png" alt="">
+          <p class="cart1">Cart(0)</p>
+          <p class="cart2">(0)</p>
+         </div>
+      
+   </nav>
+   </div>
+    <div class="changeWhite">
     <div class="change-log">
      <h1>Changelog</h1>
   </div>
+</div>
   <div class="change-log-white">
     <div>
         <img src="./About-img/Photo (26).jpg" alt="">
@@ -60,12 +93,13 @@
     </div>
   </div>
 
+
   <div class="subscribe-shop">
     <div class="subscribe-flex-shop">
         <h2>Subscribe to <br> our Newslatter</h2>
       <div class="button-flex-shop">
         <form action="">
-          <input class="input" type="text" name="firstname" value="Your Email Address"><br>
+          <input class="inputs" type="text" name="firstname" value="Your Email Address"><br>
         </form >
         <button id="sub">Subscribe</button>
     </div>
@@ -73,11 +107,11 @@
   </div>
 
   <footer>
-    <div class="contact-shop">
+   <div class="contact-shop">
       <h2>Contact Us</h2>
+     <h3> E-mail</h3>
       <p>
-        E-mail <br>
-        needhelp@organia.com <br><br>
+        needhelp@organia.com <br><br> 
         Phone <br>
         666 888 888 <br><br>
         Address <br>
@@ -121,9 +155,11 @@
   </footer>
   <!-- <hr> -->
   <div class="copyrite">
-  <p>copyrite @ Organik | Designed by VictorFlow Template - Power by WebFlow</p>
-</div>
-  
+    <p>copyrite @ <span style="color: #274C5B; font-weight: bold;">Organik</span> Designed by
+        | <span style="color: #274C5B; font-weight: bold;"> VictorFlow</span> 
+        Template - Power by  <span style="color: #274C5B;  font-weight: bold;"> WebFlow</span></p>
+  </div>
+    
 
 
     
