@@ -43,6 +43,7 @@ label a{
       padding:20px;
       display:block;
       justify-content: space-around;
+      
   }
   .mobileLinks ul li a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

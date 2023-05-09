@@ -849,7 +849,6 @@ h6{
    color: #4a6d7a;
    margin: 20px 0px 0px 10px;
    font-family: 'Roboto';
-
 }
 .the-benefit-white{
     display: flex;
@@ -864,7 +863,6 @@ h6{
     color: gray;
     font-size: 16px;
     font-weight: lighter;
-
 }
 .the-benefit-white button{
     background-color:  #EFD372;
@@ -1366,10 +1364,6 @@ footer{
     font-weight: lighter;
     font-family: 'Open Sans';
  }
- /* .team{
-    width: 100%;
-    height: 120vh; 
- } */
  .choose-background-team-img{
     background-image: url(../Shop-img/Background\ Image.jpg);
     width: 100%;
@@ -1378,14 +1372,7 @@ footer{
     background-repeat: no-repeat;
 	background-position: center;
 }
-/* .choose-background-team{
-    background-image: url(../image/Background\ Patterns\ \(1\).png);
-    width: 100%;
-	height:60vh;
-	background-size: cover;
-    background-repeat: no-repeat;
-	background-position: center;
-} */
+
 .choose-background-team h1{
     text-align: center;
     color:#274C5B ;
@@ -1514,14 +1501,14 @@ footer{
  }
  /* ----------------------shop single-------------------- */
   /* ----------------------shop single-------------------- */
- .shop-single-bg2{
+ /* .shop-single-bg2{
     background-image: url(../image/Background\ Patterns\ \(1\).png);
     width: 100%;
 	height:60vh;
 	background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
-}
+} */
 .shop-single-bg{
     background-image: url(../Shop-img/Banner\ Image\ \(1\).jpg);
     width: 100%;
@@ -1854,11 +1841,10 @@ footer{
     background-image: url(../service-img/Photo\ \(16\).jpg);
     width: 100%;
 	height:100vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
     margin-top: -25px;
-
 }
 .rose p{
     text-align: center;
@@ -1958,11 +1944,11 @@ footer{
     /* margin-top: 17px; */
 }
 .page-404 h2{
-    color:#274C5B ;
+color:#274C5B ;
     font-size: 50px;
     font-weight: bold;
     /* margin-bottom:-2%;  */
-    margin-top: 20px; 
+    margin-top:  20px; 
 }
 .page-404 p{
     color: rgb(92, 89, 89);
@@ -1989,7 +1975,7 @@ footer{
     padding: 20px 5px 0px 10px;
 }
 .page404 .text{
-  padding: 50px 0px 0px 750px;
+  padding: 50px 0px 0px 100px;
 }
 
 /* -----------------------recent style------------------------ */
@@ -2453,7 +2439,7 @@ footer{
     background-image: url(../service-img/Patterns\ \(4\).png);
     width: 100%;
 	height:40vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
     margin-top: 20px;
@@ -2461,7 +2447,7 @@ footer{
 .licenses-bg{
     width: 100%;
 	height:40vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
     margin-top: 20px; 
@@ -2479,8 +2465,7 @@ footer{
 } */
 .licenses-row h2{
     color:#274C5B;
-    font-size: 30px;
-    /* text-align: left; */
+    font-size: 25px;
     width: 50%;
     margin-top: 20px;
 
@@ -2816,6 +2801,7 @@ textarea{
     height: 100vh;
     background-color: #225c74;
     padding-top: 50px;
+  
   }
   .mobileLinks ul li{
       list-style: none;
@@ -2929,7 +2915,7 @@ nav .fa{
         gap: 10px;
      } 
      .dropbtn button{
-        color: #274C5B;
+        color: #03131a;
         padding: 0px;
         font-size: 20px;
         border: none;
@@ -2946,7 +2932,8 @@ nav .fa{
      .dropdown-content{
         display: none;
         position: fixed;
-        background-color:gray;
+        z-index: 1;
+        background-color:#274C5B;
         min-width: 120px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
      }
@@ -3076,6 +3063,31 @@ nav .fa{
     .about-us-row img{
         width: 100%;
         height: 600px;
+    }
+    /* .shop-single-bg2{
+        background-image: url(../image/Background\ Patterns\ \(1\).png);
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top:20px;
+    } */
+    .shop-single-bg{
+        background-image: url(../Shop-img/Banner\ Image\ \(1\).jpg);
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top:-10px;
+    }
+    .shop-single-bg h1{
+        text-align: center;
+        color:#274C5B ;
+        padding:50px 0px;
+        font-size: 25px;
+        font-family: 'Roboto';
     }
     .shop-now{
       flex-direction: column;
@@ -3242,8 +3254,9 @@ nav .fa{
     }
     .the-benefit-white{
         width: 90%;
-        height: 65%;
+        height:50%;
         margin-left: 20px;
+        /* margin-top: 30px; */
     }
     /* .img-photo{
         width: 428px;
@@ -3583,31 +3596,142 @@ nav .fa{
         background-image: url(../service-img/Photo\ \(20\).png);
         width: 100%;
         height:100%;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    .choose-background-service-img h1{
+        text-align: center;
+        color:#274C5B ;
+        padding: 50px 0px;
+        font-size: 25px;
+        margin-top: 5px;
+       font-family: Arial;
+    }
+    .service p{
+        color: #7EB693 ;
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+        padding-top: 50px;
+        font-family: 'Yellowtail';
+    }
+    .service h2{
+        color: #274C5B;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0px;
+        font-family: 'Roboto';
+    }
+    .dairy-row{
+        margin-right: -50px;
+        margin-top: 40px;
+    }
+    .dairy-col{
+        margin-right: -50px;
+        margin-top: 40px;
+    }
+    .service-flex{
+        display: flex;
+        margin-left: 180px
+    }
+    .dairy-row img{
+        margin-left: 230px;
+        margin-top: 20px;
     }
 
     .choose-background-shop h1{
         padding-top:40px;
     }
     .dairy-row img{
-        margin-left: 230px;
+        margin-left: 0px;
     }
     .dairy-row{
         margin-right: -50px;
         margin-top: 40px;
+        margin-left: -130px;
         
     }
     .dairy-col{
         margin-left:-180px;
+        margin-top: -30px;
+    }
+    .dairy-row h3{
+        color: #274C5B;
+        text-align:left; 
         margin-top: 10px;
+        font-family: 'Roboto'; 
+    }
+    .dairy-row h5{
+        color: gray;
+        text-align: left; 
+        margin-top: 10px; 
+        font-weight: lighter;
+        font-size: 14px;
+        font-family: 'Open Sans';
+    }
+    .dairy-col h3{
+        color: #274C5B;
+        text-align: left; 
+        margin-top: 10px; 
+        font-family: 'Roboto';
+        margin-left: 40px;
+    }
+    .dairy-col h5{
+        color: #274C5B;
+        text-align: left; 
+        margin-top: 10px; 
+        font-family: 'Roboto';
+        margin-left: 40px;
+    }
+    .dairy-col img{
+        margin-top: 10px;
+        margin-left: 40px;
     }
     .dairy-img img{
-        height: 750px;
-        width: 520px; 
+        height: 480px;
+        width: 450px; 
         /* position: relative; */
-       margin: -80px 120px 0px -220px;
+       margin: -10px 120px 0px -220px;
+    }
+    .service button{
+        background-color: transparent ;
+        color: #274C5B;
+        font-weight: bold;
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        margin:20px 0px 0px 100px;
+        border: 2px solid #274C5B;
+    }
+    .rose{
+        background-image: url(../service-img/Photo\ \(16\).jpg);
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 150px;
+    }
+    .rose p{
+        text-align: center;
+        color: #7EB693 ;
+        font-size: 15px;
+        padding-top: 125px;
+        font-family: 'Yellowtail';
+    }
+    .rose h2{
+        text-align: center;
+        color: #274C5B;
+        font-size: 25px;
+        font-family:'Roboto';
+    }
+    .rose h5{
+        text-align: center;
+        color:#525C60;
+        font-size: 10px;
+        font-family:'Open Sans';
+        margin-top: 15px;
     }
     .health{
        flex-direction: column;
@@ -3621,14 +3745,27 @@ nav .fa{
     .product{
         background-color:#274C5B ;
         border-radius: 10px;
-        width: 300px;
+        width: 250px;
         height: 60px;
+        font-size: 10px;
+        margin-left: 20px;
+        padding-bottom:20px;
+        font-family: 'Open Sans';
+    }
+    .additional{
+        background-color:#eaeff1 ;
+        border-radius: 10px;
+        width: 230px;
+        height: 60px;
+        margin-left: 15px;
+        padding-bottom:20px;
+        font-family: 'Open Sans';
     }
     .health .millet{
         background-color: #F9F8F8;
         height: 450px;
         width: 95%;
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
         border-radius: 20px;
     }
     
@@ -3655,6 +3792,13 @@ nav .fa{
     background-position: center;
     background-color: #f7f8f8;
     margin-top: 20px;
+}
+.change-log h1{
+    text-align: center;
+        color:#274C5B ;
+        padding:50px 0px;
+        font-size: 25px;
+        font-family: 'Roboto';
 }
 .changeWhite h1{
   padding-top: -200px;
@@ -3722,6 +3866,11 @@ nav .fa{
     .contact-form{
         margin: 80px 0px 0px 20px;
     }
+    .contact-flex h1{
+    color:#274C5B ;
+    margin: 75px 0px 0px 40px;
+    font-size: 25px;
+}
     .input-flex input{
         width:90%;
     }
@@ -3750,6 +3899,11 @@ nav .fa{
         margin: -240px 10px 0px 10px;
         border-radius: 20px 20px 0px 0px;
     }
+    .blackraspberry-row h1{
+        color:#274C5B ;
+        padding: 40px 0px 0px 50px; 
+        font-size: 25px; 
+    }
     .blackraspberry-col{
         width: 78%;
         margin: 0px 10px 0px 10px;
@@ -3769,6 +3923,7 @@ nav .fa{
     .about-the-farm h1{
         color:#274C5B ;
         margin: 20px 0px 0px 10px;
+        font-size: 25px;
     }
     .about-the-farm img{
         border-radius: 20px;
@@ -3779,20 +3934,20 @@ nav .fa{
     .resent-bg-pattern{
         background-image: url(../About-img/Patterns\ \(2\).png);
         width: 100%;
-        height:60vh;
+        height:100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-top: -300px;
+        margin-top: -10px;
     }
     .recent-bg{
         background-image: url(../About-img/Image\ \(6\).png);
         width: 100%;
-        height:60vh;
+        height:100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-top: 100px;
+        margin-top: -10px;
     }
     
     .recent-bg h1{
@@ -3800,7 +3955,32 @@ nav .fa{
         color:#274C5B ;
         padding:50px 0px;
         font-size: 25px;
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        font-family: 'Roboto';
+    }
+    .licenses{
+        background-image: url(../service-img/Patterns\ \(4\).png);
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top:-10px;
+    }
+    .licenses-bg{
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top:-10px;
+        background-color: #fafafa;
+    }
+    .licenses h1{
+        text-align: center;
+        color:#274C5B ;
+        padding:50px 0px;
+        font-size: 25px;
         font-family: 'Roboto';
     }
     .licenses-row{
@@ -3834,35 +4014,78 @@ nav .fa{
     margin: 30px 0px 0px 0px;
 }
 .the-benefit-flower1{
-    margin: -200px 10px 60px 10px;
+    margin: -20px 10px 60px 10px;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
 }
 .the-benefit-tomato1{
     margin: 80px 10px 60px 10px;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
 }
+.the-benefit-white h3{
+    color:#274C5B ;
+    margin: 15px 0px 0px -15px;
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+.the-benefit-white h5{
+    margin: 15px 0px 0px -15px;
+    color: gray;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.the-benefit-white h2{
+    font-size: 10px;
+    color: #4a6d7a;
+    margin: 20px 0px 0px 10px;
+    font-family: 'Roboto';
+ }
 
 .the-recent{
     margin: 50px 10px 60px 10px;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
 }
 .the-recent1{
     margin: 80px 10px 60px 10px;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
 }
 .the-recent2{
     margin: 50px 10px 60px 10px;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
 }
 .the-recent3{
     margin: 80px 10px 100px 10px;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
+}
+.protected{
+    background-image: url(../service-img/Patterns\ \(4\).png);
+    width: 100%;
+	height:100%;
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: -10px;  
+}
+.protected-bg{
+    width: 100%;
+	height:100%;
+	background-size:contain;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: -10px; 
+    background-color: #fafafa;
+}
+.protected h1{
+    text-align: center;
+    color:#274C5B ;
+    padding:50px 0px;
+    font-size: 25px;
+    font-family: 'Roboto';
 }
 .protected-flex{
     display: flex;
@@ -3926,7 +4149,7 @@ nav .fa{
 }
 .prefferred h1{
     color: #274C5B ;
-    font-size: 45px;
+    font-size: 25px;
     padding-top: 20px;
 }
 .prefferred p{
@@ -3959,26 +4182,49 @@ nav .fa{
 }
 .quality-img{
     background-image: url(../portfolio-img/Photo\ \(21\).png);
-    width: 100%;
+    width: 95%;
 	height:75vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
-    margin: 50px 0px 0px 0px;
+    margin: -200px 20px 0px 10px;
 
+}
+.quality{
+    background-image: url(../portfolio-img/Background\ \(1\).jpg);
+    width: 100%;
+	height:100%;
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: -10px;
+}
+.quality h1{
+    text-align: center;
+    color:#274C5B ;
+    padding:50px 0px;
+    font-size: 25px;
+    /* margin-top: -200px; */
+    font-family: 'Roboto';
 }
 .quality-writeup h1{
     color:#274C5B ;
     margin-left: 10px;
-    font-size: 48px;
+    margin-top: -230px;
+    font-size: 20px;
+    font-family: 'Roboto';
     /* width: 100%; */
+}
+#quality-write-h1{
+    margin-top: 30px;
 }
 .quality-writeup p{
     color: gray;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: lighter;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin: 10px 10px 0px 10px;
+    font-family: 'Open Sans';
+    text-align: justify;
 }
 .quality-writeup{
     margin: 50px 0px 0px 0px;
@@ -3991,12 +4237,12 @@ nav .fa{
 }
 .quality-flex h2{
     color:#274C5B ;
-    font-size: 25px;
-    padding: 55px 0px 10px 30px;
+    font-size: 20px;
+    padding: 45px 0px 10px 30px;
 }
 .quality-flex p{
     color:#50636b ;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: lighter;
     padding: 0px 0px 0px 30px;
     line-height: 25px;
@@ -4010,10 +4256,10 @@ nav .fa{
 }
 .quality-flex-col{
     height: 230px;
-   width: 100%;
+    width:95%;
     background-color:#f9f7f8;
     border-radius: 20px;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-top: 20px;
 }
 .quality-flex2{
@@ -4023,12 +4269,12 @@ nav .fa{
 
 .quality-flex2 h2{
     color:#274C5B ;
-    font-size: 25px;
-    padding: 55px 0px 10px 30px;
+    font-size: 20px;
+    padding: 45px 0px 10px 30px;
 }
 .quality-flex2 p{
     color:#50636b ;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: lighter;
     padding: 0px 0px 0px 30px;
     line-height: 25px;
@@ -4042,10 +4288,11 @@ nav .fa{
 }
 .quality-flex-col2{
     height: 230px;
-    width:100%;
+    width:95%;
     background-color:#f9f7f8;
     border-radius: 20px;
-    margin-left: 0px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 .best-quality-flex h2{
     color:#274C5B ;
@@ -4065,29 +4312,30 @@ nav .fa{
 .best-quality-flex{
     display: flex;
     background-color:#f9f7f8;
-    width: 390px;
+    width: 350px;
     height: 80px;
     border-radius: 55px;
     margin-top: 50px;
+    margin-left:10px;
 }
 .best-quality-flex1{
     display: flex;
     background-color:#f9f7f8;
-    width: 390px;
+    width: 350px;
     height: 80px;
     border-radius: 55px;
-    margin-left:0px;
+    margin-left:10px;
     margin-top: 50px;
 }
 .best-quality-flex h2{
     color:#274C5B ;
     padding:20px 0px 0px 27px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .best-quality-flex1 h2{
     color:#274C5B ;
     padding:20px 0px 0px 27px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .best-quality-flex1 h3{
     color:white ;
@@ -4191,6 +4439,76 @@ footer{
         margin-left: 0;
         text-align: left;
     }
+    .page-404{
+        background-image: url(../About-img/Pattern.png);
+        width: 100%;
+        height:100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top:-10px;
+    }
+    .page404{
+        background-image: url(../About-img/Photo\ \(33\).png);
+        width: 100%;
+        height:100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -10px;
+    }
+    .page-404 h1{
+        text-align: center;
+        color:#274C5B ;
+        padding:50px 0px;
+        font-size: 25px;
+        font-family: 'Roboto';
+    }
+    .page-404 h2{
+color:#274C5B ;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:  20px; 
+}
+.page404 .text{
+    padding:-200px 0px 0px 100px;
+  }
+  .choose-background-team-img{
+    background-image: url(../Shop-img/Background\ Image.jpg);
+    width: 100%;
+	height:100%;
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: -10px;
+}
+
+.choose-background-team h1{
+    text-align: center;
+    color:#274C5B ;
+    padding:50px 0px;
+    font-size: 25px;
+    font-family: 'Roboto';
+}
+.team h2{
+    margin-top: 30px;
+}
+/* .team h1 {
+    text-align: center;
+    color: #274C5B;
+    margin-top:5px;
+    font-family: 'Roboto';
+    font-size: 25px;
+} */
+
+.team h5 {
+    text-align: center;
+    color: gray;
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    margin-top: 10px;
+}
 }
 
 
