@@ -1125,7 +1125,7 @@ footer{
     background-image: url(../Shop-img/Image\ \(1\).png);
     width: 100%;
 	height:60vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
 }
@@ -1133,7 +1133,7 @@ footer{
     background-image: url(../image/Background\ Patterns\ \(1\).png);
     width: 100%;
 	height:60vh;
-	background-size: cover;
+	background-size:contain;
     background-repeat: no-repeat;
 	background-position: center;
 }
@@ -1665,6 +1665,22 @@ footer{
     background-repeat: no-repeat;
 	background-position: center;
 }
+.choose-background-portfolio{
+    background-image: url(../portfolio-img/Patterns.png);
+    width: 100%;
+    height:60vh;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.choose-background-portfolio-img h1{
+    text-align: center;
+    color:#274C5B ;
+    padding-top: 180px;
+    font-size: 45px;
+    margin-top: 0px;
+    font-family: 'Roboto';
+}
 .portfolio-flex img{
     width: 300px;
     height: 300px;
@@ -1746,15 +1762,30 @@ footer{
     background-image: url(../service-img/Photo\ \(20\).png);
     width: 100%;
 	height:60vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
 }
+.choose-background-service{
+    background-image: url(../service-img/Bg\ Patterns\ \(2\).png);
+    width: 100%;
+	height:60vh;
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+.choose-background-service h1{
+    text-align: center;
+    color:#274C5B ;
+    padding-top: 180px;
+    font-size: 45px;
+    margin-top: 0px;
+}
 .service{
     width: 100%;
-    height: 170vh;
+    height: 150vh;
     background-color: #f8f8f8;
-    margin-top: -17px;
+    margin-top: -38px;
 }
 .service p{
     color: #7EB693 ;
@@ -1785,7 +1816,7 @@ footer{
 }
 .dairy-row img{
     margin-left: 230px;
-    margin-top: 20px;
+    margin-top:20px;
 }
 /* .dairy-col img{
     margin-left: 230px;
@@ -1817,14 +1848,14 @@ footer{
     font-family: 'Roboto';
 }
 .dairy-col img{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .dairy-col h5{
     color: gray;
     margin-top: 10px;
     text-align: left; 
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Open Sans';
 }
 .service button{
@@ -1834,17 +1865,17 @@ footer{
     height: 50px;
     width: 150px;
     border-radius: 10px;
-    margin:0px 0px 0px 600px;
+    margin:-60px 0px 0px 600px;
     border: 2px solid #274C5B;
 }
 .rose{
     background-image: url(../service-img/Photo\ \(16\).jpg);
     width: 100%;
 	height:100vh;
-	background-size: contain;
+	background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
-    margin-top: -25px;
+    /* margin-top: -25px; */
 }
 .rose p{
     text-align: center;
@@ -2997,6 +3028,7 @@ nav .fa{
     }
     .choose-background-shop h1{
         padding-top: 40px;
+        /* font-size: 25px; */
     }
     .choose-background-home-img{
         background-image: url(../About-img/Image\ \(5\).png);
@@ -3254,7 +3286,7 @@ nav .fa{
     }
     .the-benefit-white{
         width: 90%;
-        height:50%;
+        height:60%;
         margin-left: 20px;
         /* margin-top: 30px; */
     }
@@ -3565,6 +3597,7 @@ nav .fa{
 
     .portfolio-flex img{
         width: 90%;
+        margin-top: 0px;
     }
     .opacity-white{
     width: 80%;
@@ -3576,17 +3609,39 @@ nav .fa{
 }
     .portfolio-flex2 img{
         width: 90%;
+        /* margin-top: 80px; */
     }
     .portfolio-flex h2{
-        padding-top: 40px;
+        padding-top: 0px;
+    }
+    #honey{
+        margin-top: 110px;
     }
     .choose-background-portfolio-img{
         background-image: url(../portfolio-img/Image\ \(2\).png);
         width: 100%;
         height:100%;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        margin-top: -10px;
+    }
+    .choose-background-portfolio{
+        background-image: url(../portfolio-img/Patterns.png);
+        width: 100%;
+        height:100%;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -10px;
+    }
+    .choose-background-portfolio-img h1{
+        text-align: center;
+        color:#274C5B ;
+        padding: 50px 0px;
+        font-size: 25px;
+        margin-top: 5px;
+        font-family: Arial;
     }
     .service-flex{
         flex-direction: column;
@@ -3599,6 +3654,7 @@ nav .fa{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        margin-top: -10px;
     }
     .choose-background-service-img h1{
         text-align: center;
@@ -3607,6 +3663,23 @@ nav .fa{
         font-size: 25px;
         margin-top: 5px;
        font-family: Arial;
+    }
+    .choose-background-service{
+        background-image: url(../service-img/Bg\ Patterns\ \(2\).png);
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -10px;
+    }
+    .choose-background-service h1{
+        text-align: center;
+        color:#274C5B ;
+        padding: 50px 0px;
+        font-size: 25px;
+        margin-top: 5px;
+        font-family: Arial;
     }
     .service p{
         color: #7EB693 ;
@@ -3630,6 +3703,12 @@ nav .fa{
     .dairy-col{
         margin-right: -50px;
         margin-top: 40px;
+    }
+    .service{
+        width: 100%;
+        height: 200vh;
+        background-color: #f8f8f8;
+        margin-top: -38px;
     }
     .service-flex{
         display: flex;
@@ -3711,25 +3790,28 @@ nav .fa{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-top: 150px;
+        margin-top: -18px;
+    }
+    .rose img{
+        margin-top: 0px;
     }
     .rose p{
         text-align: center;
         color: #7EB693 ;
-        font-size: 15px;
-        padding-top: 125px;
+        font-size: 13px;
+        padding-top: 25px;
         font-family: 'Yellowtail';
     }
     .rose h2{
         text-align: center;
         color: #274C5B;
-        font-size: 25px;
+        font-size: 20px;
         font-family:'Roboto';
     }
     .rose h5{
         text-align: center;
-        color:#525C60;
-        font-size: 10px;
+        color:gray;
+        font-size: 11px;
         font-family:'Open Sans';
         margin-top: 15px;
     }
@@ -3860,6 +3942,14 @@ nav .fa{
         height: 350px;
         margin: -400px 50px 0px 30px;  
     }
+    .green-white h5{
+        color:  #525C60;
+        padding: 10px 0px 0px 25px;
+        font-family: 'Open Sans';
+        font-weight: lighter;
+        line-height: 20px;
+        font-size: 14px;
+    }
     .contact-flex{
       flex-direction: column;
     }
@@ -3870,6 +3960,12 @@ nav .fa{
     color:#274C5B ;
     margin: 75px 0px 0px 40px;
     font-size: 25px;
+}
+.contact-flex h5{
+    color: gray;
+    margin: 10px 0px 0px 40px;
+    font-weight: lighter;
+    font-size: 14px;   
 }
     .input-flex input{
         width:90%;
@@ -3904,6 +4000,13 @@ nav .fa{
         padding: 40px 0px 0px 50px; 
         font-size: 25px; 
     }
+    .blackraspberry-row p{
+        color:gray ;
+        padding: 20px 0px 0px 50px;
+        font-weight: lighter;
+        line-height: 20px;
+        font-size: 14px;
+    }
     .blackraspberry-col{
         width: 78%;
         margin: 0px 10px 0px 10px;
@@ -3919,6 +4022,7 @@ nav .fa{
     .about-the-farm p{
         color: gray;
         margin: 20px 0px 0px 10px;
+        font-size: 14px;
     }
     .about-the-farm h1{
         color:#274C5B ;
@@ -3991,7 +4095,7 @@ nav .fa{
     }
     .licenses-row h2{
         color:#274C5B;
-        font-size: 30px;
+        font-size:25px;
         /* text-align: left; */
         width: 100%;
         margin-top: 20px;
@@ -4010,6 +4114,7 @@ nav .fa{
     color: gray;
     width: 85%;
     font-weight:300;
+    font-size: 14px;
     line-height: 23px;
     margin: 30px 0px 0px 0px;
 }
@@ -4139,7 +4244,7 @@ nav .fa{
 }
 .blog-white p{
     color: #274C5B ;
-    font-size: 17px;
+    font-size: 14px;
     padding: 0px 0px 0px 10px;
     line-height: 25px;
 }
@@ -4154,12 +4259,12 @@ nav .fa{
 }
 .prefferred p{
     color: gray ;
-    font-size: 17px;
+    font-size: 14px;
     padding-top: 20px;
 }
 .prefferred li{
     color: gray ;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 30px;
     padding-top: 20px;
     margin-left: 0px;   
@@ -4176,7 +4281,7 @@ nav .fa{
 }
 .the-first h4{
     color: #274C5B ;
-    font-size: 17px;
+    font-size: 14px;
     text-align: center;
     padding: 60px 0px 0px 0px;  
 }
@@ -4211,7 +4316,7 @@ nav .fa{
     color:#274C5B ;
     margin-left: 10px;
     margin-top: -230px;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Roboto';
     /* width: 100%; */
 }
@@ -4220,7 +4325,7 @@ nav .fa{
 }
 .quality-writeup p{
     color: gray;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: lighter;
     margin: 10px 10px 0px 10px;
     font-family: 'Open Sans';
@@ -4237,12 +4342,12 @@ nav .fa{
 }
 .quality-flex h2{
     color:#274C5B ;
-    font-size: 20px;
+    font-size: 25px;
     padding: 45px 0px 10px 30px;
 }
 .quality-flex p{
     color:#50636b ;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: lighter;
     padding: 0px 0px 0px 30px;
     line-height: 25px;
@@ -4269,12 +4374,12 @@ nav .fa{
 
 .quality-flex2 h2{
     color:#274C5B ;
-    font-size: 20px;
+    font-size: 25px;
     padding: 45px 0px 10px 30px;
 }
 .quality-flex2 p{
     color:#50636b ;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: lighter;
     padding: 0px 0px 0px 30px;
     line-height: 25px;
