@@ -1202,7 +1202,7 @@ footer{
 }
 .about-page h1{
     color: #274C5B;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 0px;
     font-weight: bold;
     font-family: 'Roboto';
@@ -1211,7 +1211,7 @@ footer{
     color: #7EB693;
     font-family: 'Yellowtail';
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
 }
 .about-page-col{
     margin: 80px 0px 0px 40px;
@@ -1720,7 +1720,9 @@ footer{
     border-radius: 20px;
 }
 .fa-greater-than{
-    color: rgb(187, 25, 25);
+    color: rgb(129, 37, 37);
+    font-size: 50px;
+    margin-top: 100px;
 }
 
 .portfolio-flex2 h2{
@@ -1952,7 +1954,7 @@ footer{
     background-image: url(../About-img/Pattern.png);
     width: 100%;
 	height:100vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
     margin-top: 20px;
@@ -1961,7 +1963,7 @@ footer{
     background-image: url(../About-img/Photo\ \(33\).png);
     width: 100%;
 	height:100vh;
-	background-size: cover;
+	background-size: contain;
     background-repeat: no-repeat;
 	background-position: center;
     margin-top: 20px;
@@ -2006,7 +2008,7 @@ color:#274C5B ;
     padding: 20px 5px 0px 10px;
 }
 .page404 .text{
-  padding: 50px 0px 0px 100px;
+  padding: 50px 0px 0px 700px;
 }
 
 /* -----------------------recent style------------------------ */
@@ -3344,6 +3346,7 @@ nav .fa{
     .the-benefit-flower{
         margin-left: 0px;
         width: 100%;
+        margin-top: -600px;
     }
     .the-benefit-tomato{
         margin-left: 0px;
@@ -3504,6 +3507,15 @@ nav .fa{
     .why-choose-us-col{
         flex-direction: column;
         padding: 50px 0px 0px 10px;
+    }
+    .why-choose-us-col h2{
+        font-size: 25px;
+        font-family: 'Yellowtail';
+    }
+    .why-choose-us-col h1{
+        font-size: 30px;
+        margin-top: 20px;
+        font-family: 'Roboto';
     }
     .why-choose-us-col img{
         width: 95% ;
@@ -4571,7 +4583,7 @@ footer{
     .page-404{
         background-image: url(../About-img/Pattern.png);
         width: 100%;
-        height:100vh;
+        height:100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -4580,7 +4592,7 @@ footer{
     .page404{
         background-image: url(../About-img/Photo\ \(33\).png);
         width: 100%;
-        height:100vh;
+        height:100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -4590,17 +4602,26 @@ footer{
         text-align: center;
         color:#274C5B ;
         padding:50px 0px;
-        font-size: 25px;
+        font-size: 35px;
         font-family: 'Roboto';
+        margin-top: -40px;
     }
     .page-404 h2{
-color:#274C5B ;
-    font-size: 25px;
-    font-weight: bold;
-    margin-top:  20px; 
-}
+        color:#274C5B ;
+        font-size: 20px;
+        font-family: 'Roboto';
+        margin-top:  -20px; 
+        margin-left: 90px;
+        }
+        .page-404 p{
+            color: rgb(92, 89, 89);
+            font-size: 10px;
+            margin-top: 5px;
+            margin-left: 90px;
+        }
+   
 .page404 .text{
-    padding:-200px 0px 0px 100px;
+    padding:0px 0px 0px 100px;
   }
   .choose-background-team-img{
     background-image: url(../Shop-img/Background\ Image.jpg);
