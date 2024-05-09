@@ -7,16 +7,17 @@
     <title>HOME PAGE</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     
 </head>
 <body>
     <div class="container">
-     <nav class="nav"> 
-        <div class="logo">
+     <nav class="nav2"> 
+        <div id="logoHome" class="logo">
           <a href="./mobile.html"><i class="fa fa-bars"></i></a>
-           <img src="./image/Logo.svg" alt="">
+           <img  id="logoImg" src="./image/Logo.svg" alt="">
         </div>
-       <div class="navLinks">
+       <div id="navLinkHome" class="navLinks">
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -24,7 +25,6 @@
               <div class="dropdown">
                 <div class="dropbtn">
                   <button>pages</button><i class="fa-solid fa-angle-down"></i>
-
                 </div>
                 <div class="dropdown-content">
                   <a href="./portfolio.html">portfolio</a>
@@ -71,14 +71,27 @@
           </div>
        
           <div class="cart">
-           <img src="./image/Cart Icon.png" alt="">
-           <p class="cart1">Cart(0)</p>
+            <div class="icon-cart">
+             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+            </svg>
+          </div>
+           <!-- <img src="./image/Cart Icon.png" alt=""> -->
+           <p class="cart1">Cart <span id="addCount"></span></p>
            <p class="cart2">(0)</p>
           </div>
        
     </nav>
     </div>
 
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
 <div class="choose-background-img">
   <div class="choose-background">
   <div class="natural">
@@ -95,6 +108,72 @@
 </div>
 </div>
 </div>
+</div>
+<div class="carousel-item">
+  <div class="choose-background-img1">
+    <div class="choose-background">
+    <div class="natural">
+     <p>Why choose us</p>
+     <h1>Healthy eating <br> Healthy life style <br> </h1>
+     <div class="explore-now"> 
+     <div>
+     <button>Explore Now</button>
+    </div>
+     <div>
+      <i class="fa-sharp fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <div class="choose-background-img2">
+      <div class="choose-background">
+      <div class="natural">
+        <p>reach for a healtheir you, with organic food</p>
+       <h1>Always fresh  <br> keep you healthy everyday <br></h1>
+         
+       <div class="explore-now"> 
+       <div>
+       <button>Shop Now</button>
+      </div>
+       <div>
+        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="cartTab">
+  <h1>shopping cart</h1>
+  <div class="listCart" id="cart">
+      <!-- <div class="item">
+          <div class="image">
+              <img  alt="" id="cartImage">
+          </div>
+          <div class="name" id="cartName"></div>
+          <div class="totalPrice" id="cartPrice"></div>
+          <div class="quantity">
+          <span class="minus" id="cartMinus"></span>
+          <span id="cartCount">1</span>
+          <span class="plus" id="cartPlus"></span>
+      </div>
+      </div> -->
+
+  </div>
+  <div class="btn">
+      <button class="close">close</button>
+      <button class="checkOut">checkout</button>
+     
+  </div>
+  
+</div>
+
 
 <div class="flex">
 <div class="get-garden">
@@ -105,7 +184,9 @@
   <p>Offer!!</p>
   <h2>Get 10% off <br>on Vegetables</h2>
 </div>
-</div> 
+</div>
+
+ 
 
 <div class="about">
 <div class="about-us-row">
@@ -115,9 +196,11 @@
   <p>About Us</p>
   <h1>We Believe in Working <br>Accredited Farmers</h1>
   <h5>
-    Simply dummy text of the printing and typesetting industry. Loream had ceased to <br>
-    been the industry's standard dummy text ever since the 1500s, when an unknown <br>
-    printer took a gallery
+    We take pride in collaborating with industry
+     frontrunners spanning diverse sectors, nations,<br> and crop types.
+      By forging robust partnerships, we unite around a shared vision,
+       fostering<br> a global agricultural 
+    sector
   </h5>
   <div class="organic">
   <div class="organic-img">
@@ -125,8 +208,9 @@
   </div>
   <div class="food-only">
     <h2>Organic Food only</h2>
-    <h5>Simply dummy text of the printing and typesetting <br>
-    industry lorem ipsum
+    <h5> Organic foods are not necessarily completely
+       chemical free,<br> but the pesticide residues will be 
+       considerably lower 
     </h5>
   </div>
 </div>
@@ -137,18 +221,21 @@
   </div>
   <div class="food-only">
     <h2>Quality Standard</h2>
-    <h5>Simply dummy text of the printing and typesetting <br>
-    industry lorem ipsum
+    <h5>Quality standards are sets of good management practices, methods,<br>
+       systems, requirements, and/or specifications established by industry 
+       
     </h5>
   </div>
 </div>
 
 <div class="shop-now">
   <div>
+   
 <p id="shop-p"> Shop Now</p>
 </div>
 <div>
-  <i class="fa-sharp fa-solid fa-arrow-right"></i>
+ 
+  <a href="shop.html"> <i class="fa-sharp fa-solid fa-arrow-right"></i> </a>
 </div>
 </div>
 
@@ -160,17 +247,17 @@
   <h2>Our product</h2>
   <div class="flex-images">
     <div class="vegetables">
-      <div class="veg">Vegetables</div>
-      <img src="./image/Photo (2)_prev_ui.png" alt="">
-      <h3>Calabrese Broccoli</h3>
+      <div class="veg" id="count-1">add to cart</div>
+      <img id="productImage" src="./image/Photo (2)_prev_ui.png" alt="">
+      <h3 id="productName">Calabrese Broccoli</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $13.00</span></h6>
     </div>
     <div id="flex-s">
-      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i> 
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
@@ -179,13 +266,13 @@
     </div>
     </div>
     <div class="vegetables">
-      <div class="veg">Fresh</div>
-      <img src="./image/Photo (3)_prev_ui.png" alt="">
-      <h3>Fresh Banana Friut</h3>
+      <div class="veg" id="count-2">add to cart</div>
+      <img src="./image/Photo (3)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Fresh Banana Friut</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice"  style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $14.00</span></h6>
     </div>
     <div id="flex-s">
@@ -198,13 +285,13 @@
     </div>
     </div>
     <div class="vegetables">
-      <div class="veg">Millets</div>
-      <img src="./image/Photo (4)_prev_ui.png" alt="">
-      <h3>White Nuts</h3>
+      <div class="veg" id="count-3">add to cart</div>
+      <img src="./image/Photo (4)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">White Nuts</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
     </div>
     <div id="flex-s">
@@ -217,13 +304,13 @@
     </div>
     </div>
     <div class="vegetables">
-      <div class="veg">Vegetables</div>
-      <img src="./image/[removal.ai]_31ca0d84-5aa2-4736-b8b3-b320128f2c26.png" alt="">
-      <h3>Vegan Red Tomato</h3>
+      <div class="veg" id="count-4">add to cart</div>
+      <img src="./image/[removal.ai]_31ca0d84-5aa2-4736-b8b3-b320128f2c26.png" id="productImage" alt="">
+      <h3 id="productName">Vegan Red Tomato</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
     </div>
     <div id="flex-s">
@@ -239,13 +326,13 @@
   </div>
   <div class="flex-images">
     <div class="vegetables">
-      <div class="veg">Health</div>
-      <img src="./image/image 14_prev_ui.png" alt="">
-      <h3>Mung Beans</h3>
+      <div class="veg" id="count-5">add to cart</div>
+      <img src="./image/image 14_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Mung Beans</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $11.00</span></h6>
     </div>
     <div id="flex-s">
@@ -259,13 +346,13 @@
 
     </div>
     <div class="vegetables">
-      <div class="veg">Nuts</div>
-      <img src="./image/Photo (5)_prev_ui (1).png" alt="">
-      <h3>Brown Hazelnut</h3>
+      <div class="veg" id="count-6">add to cart</div>
+      <img src="./image/Photo (5)_prev_ui (1).png" id="productImage" alt="">
+      <h3 id="productName">Brown Hazelnut</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $12.00</span></h6>
     </div>
     <div id="flex-s">
@@ -279,13 +366,13 @@
 
     </div>
     <div class="vegetables">
-      <div class="veg">Fresh</div>
-      <img src="./image/Photo (6)_prev_ui.png" alt="">
-      <h3>Eggs</h3>
+      <div class="veg" id="count-7">add to cart</div>
+      <img src="./image/Photo (6)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Eggs</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold; 
+      <h6><del>$20.00 </del><span  id="productPrice" style="color:#274C5B; font-weight: bold; 
       font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
     </div>
     <div id="flex-s">
@@ -299,13 +386,13 @@
 
     </div>
     <div class="vegetables">
-      <div class="veg">Fresh</div>
-      <img src="./image/Photo (7)_prev_ui.png" alt="">
-      <h3>Zelco Suji Elaichi Rusk</h3>
+      <div class="veg" id="count-8">add to cart</div>
+      <img src="./image/Photo (7)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Zelco Elaichi Rusk</h3>
       <div class="line"></div>
       <div class="flex-star">
         <div>
-      <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
        font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
     </div>
     <div id="flex-s">
@@ -342,8 +429,8 @@
     <i class="fa-solid fa-star"></i>
   </div>
   <h5>
-    Simply dummy text of the printing and typesetting industry. Loream ipsum simply dummy <br>
-   text of the printing and typesetting industry. Loream ipsum had been 
+   I can't express how much I adore fresh farm product, <br> it not just a farm
+   but a garden eveyrone will like to visit
   </h5>
   <h2>Sara Taylor</h2>
   <h5 id="consume-h5">consumer</h5>
@@ -485,10 +572,14 @@
   <div id="sed-ut">
    
   <p>
-    Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium <br>
-    doloremque laudantium. Sed ut perspiciatis
+   Whether it's pursuing a passion, achieving financial freedom, creating a 
+   better work-life balance, or making a difference in the world, entrepreneurs 
+   have a variety of motivations for stating their own business. <br>
+   There are so many reasons why people want to start their own bussinesses.
+   May be you want to be your own boss, set your working hours or simlpy do 
+   what you love for a living.
   </p>
-  <h3>Start With Our Company First</h3>
+  <!-- <h3>Start With Our Company First</h3>
   <p>
     Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium <br>
     doloremque laudantium. Sed ut perspiciatis
@@ -497,7 +588,7 @@
   <p>
     Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium <br>
     doloremque laudantium. Sed ut perspiciatis
-  </p>
+  </p> -->
 </div>
 </div>
 </div>
@@ -542,9 +633,11 @@
       <i class="fa-solid fa-user"></i>
     </div>
     <div>
-      <h2>By Rachi Card</h2>
+      <h2>By Kafayat musa</h2>
       <h3>The Benefits of Vitamine D & How To Get It</h3>
-      <h5> Simply dummy text of the printing and typesetting <br> industry. Loream ipsum simply dummy</h5>
+      <h5>Some of its potential benefits include
+          helping prevent rickets or diabetes, and strengthening bones and muscles.
+         You can get vitamin D from foods, sunshine, and supplements.</h5>
       <button>Read More</button>
     </div>
     </div>
@@ -556,9 +649,11 @@
         <i class="fa-solid fa-user"></i>
       </div>
       <div>
-        <h2>By Rachi Card</h2>
+        <h2>By Aisha Zakariya</h2>
         <h3>The Benefits of Vitamine D & How To Get It</h3>
-        <h5> Simply dummy text of the printing and typesetting <br> industry. Loream ipsum simply dummy</h5>
+        <h5>You may be able to get more vitamin D by increasing your
+           time in the sunlight, taking a supplement, 
+          and eating certain foods, including mushrooms.</h5>
         <button>Read More</button>
       </div>
     </div>
@@ -633,9 +728,8 @@
   </div>
     
 
-
-
-
+  <script src="./javascript/bootstrap.min.js"></script>
+  <script src="./css/js/script.js"></script>
 </body>
 </html>
 <!-- <i class="fa-brands fa-facebook"></i> -->

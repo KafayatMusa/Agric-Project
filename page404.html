@@ -7,16 +7,16 @@
     <title>Page 404</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./webfonts/">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <nav class="nav"> 
-       <div class="logo">
+    <nav class="nav2"> 
+       <div id="logoHome" class="logo">
          <a href="./mobile.html"><i class="fa fa-bars"></i></a>
-          <img src="./image/Logo.svg" alt="">
+          <img  id="logoImg" src="./image/Logo.svg" alt="">
        </div>
-      <div class="navLinks">
+      <div id="navLinkHome" class="navLinks">
        <ul>
            <li><a class="active" href="index.html">Home</a></li>
            <li><a href="about.html">About</a></li>
@@ -24,7 +24,6 @@
              <div class="dropdown">
                <div class="dropbtn">
                  <button>pages</button><i class="fa-solid fa-angle-down"></i>
-
                </div>
                <div class="dropdown-content">
                  <a href="./portfolio.html">portfolio</a>
@@ -71,14 +70,18 @@
          </div>
       
          <div class="cart">
-          <img src="./image/Cart Icon.png" alt="">
+           <div class="icon-cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+           </svg>
+         </div>
+          <!-- <img src="./image/Cart Icon.png" alt=""> -->
           <p class="cart1">Cart(0)</p>
           <p class="cart2">(0)</p>
          </div>
       
    </nav>
    </div>
-
 
    <div class="page404">
     <div class="page-404">

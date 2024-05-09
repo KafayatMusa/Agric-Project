@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "tomato",
+        "image": "Ellipse 15",
+        "price": 200     
+     },
+ {
+    "id": 2,
+    "name": "onions",
+    "price": 200,
+    "image": "Photo (2)_prev_ui"
+ },
+ {
+   "id": 3,
+   "name": "pepper",
+   "price": 200,
+   "image": "Photo (2)_prev_ui"
+},
+{
+   "id": 4,
+   "name": "beans",
+   "price": 270,
+   "image": "Photo (2)_prev_ui"
+},
+{
+   "id": 5,
+   "name": "corn",
+   "price": 250,
+   "image": "Ellipse 33"
+},
+ {
+    "id": 6,
+    "name": "dates",
+    "price": 270,
+    "image": "Ellipse 34"
+ },
+ {
+    "id": 7,
+    "name": "rice",
+    "price": 250,
+    "image": "Ellipse 33"
+ },
+ {
+    "id": 8,
+    "name": "yam",
+    "price": 500,
+    "image": "Ellipse 16"
+ }
+]

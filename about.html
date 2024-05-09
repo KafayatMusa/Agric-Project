@@ -7,16 +7,17 @@
     <title>ABOUT PAGE</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./webfonts/">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+   
 </head>
 <body>
   <div class="container">
-    <nav class="nav"> 
-       <div class="logo">
+    <nav class="nav2"> 
+       <div id="logoHome" class="logo">
          <a href="./mobile.html"><i class="fa fa-bars"></i></a>
-          <img src="./image/Logo.svg" alt="">
+          <img  id="logoImg" src="./image/Logo.svg" alt="">
        </div>
-      <div class="navLinks">
+      <div id="navLinkHome" class="navLinks">
        <ul>
            <li><a class="active" href="index.html">Home</a></li>
            <li><a href="about.html">About</a></li>
@@ -24,7 +25,6 @@
              <div class="dropdown">
                <div class="dropbtn">
                  <button>pages</button><i class="fa-solid fa-angle-down"></i>
-
                </div>
                <div class="dropdown-content">
                  <a href="./portfolio.html">portfolio</a>
@@ -37,33 +37,33 @@
            <!-- <li><a href="#contact">Pages</a></li> -->
            <li><a href="shop.html">Shop</a></li>
            <li>
-            <div class="dropdown">
-              <div class="dropbtn">
-                <button>News</button><i class="fa-solid fa-angle-down"></i>
-              </div>
-              <div class="dropdown-content">
-                <a href="./blog.html">Blog</a>
-                <a href="./changelog.html">Changelog</a>
-                <a href="./contact.html">Contact</a>
-                <a href="./licenses.html">Licences</a>
-                <a href="./single.html">Single</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="dropdown">
-              <div class="dropbtn">
-                <button>Project</button><i class="fa-solid fa-angle-down"></i>
-              </div>
-              <div class="dropdown-content">
-                <a href="./page404.html">Page404</a>
-                <a href=".//recent.html">Recent</a>
-                <a href="./protected.html">Protected</a>
-                <a href="./quality.html">Quality</a>
-              </div>
-            </div>
-          </li>
-          <!-- <li><a href="#about">News</a></li> -->
+             <div class="dropdown">
+               <div class="dropbtn">
+                 <button>News</button><i class="fa-solid fa-angle-down"></i>
+               </div>
+               <div class="dropdown-content">
+                 <a href="./blog.html">Blog</a>
+                 <a href="./changelog.html">Changelog</a>
+                 <a href="./contact.html">Contact</a>
+                 <a href="./licenses.html">Licences</a>
+                 <a href="./single.html">Single</a>
+               </div>
+             </div>
+           </li>
+           <li>
+             <div class="dropdown">
+               <div class="dropbtn">
+                 <button>Project</button><i class="fa-solid fa-angle-down"></i>
+               </div>
+               <div class="dropdown-content">
+                 <a href="./page404.html">Page404</a>
+                 <a href=".//recent.html">Recent</a>
+                 <a href="./protected.html">Protected</a>
+                 <a href="./quality.html">Quality</a>
+               </div>
+             </div>
+           </li>
+           <!-- <li><a href="#about">News</a></li> -->
          </ul>
        </div>
          <div class="search">
@@ -71,19 +71,25 @@
          </div>
       
          <div class="cart">
-          <img src="./image/Cart Icon.png" alt="">
-          <p class="cart1">Cart(0)</p>
-          <p class="cart2">(0)</p>
+           <div class="icon-cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+           </svg>
+         </div>
+          <!-- <img src="./image/Cart Icon.png" alt=""> -->
+          <p class="cart1">Cart <span id="addCount"></span></p>
+           <p class="cart2">(0)</p>
          </div>
       
    </nav>
    </div>
-   
    <div class="choose-background-home-img">
      <div class="choose-background-home">
       <h1>About Us</h1>
    </div>
    </div>
+
+   
 
    <div class="about-page">
     <div class="about-page-flex">
@@ -95,6 +101,18 @@
         <img src="./About-img/photo (14).png" alt="">
       </div>
     </div>
+    <!-- <div class="cartTab">
+      <h1>shopping cart</h1>
+      <div class="listCart" id="cart">  </div>
+      <div class="btn">
+          <button class="close">close</button>
+          <button class="checkOut">checkout</button>
+         
+      </div>
+      
+    </div> -->
+
+        
 
       <div class="about-page-col">
         <h2>About Us</h2>
@@ -154,7 +172,7 @@
       <div class="natural-product">
         <h4>100% Natural Product</h4>
       </div>
-      <h5 id="natural-product-h5"> Simply dummy text of the printing and typesetting <br> industry Loream lpsum </h5>
+      <h5 id="natural-product-h5">Our product is 100% natural <br> 100% fresh and nice </h5>
   
       <div class="natural-product">
         <h4>increases resistance</h4>
@@ -172,7 +190,7 @@
         <img src="./About-img/Return Purchase.png" alt="">
       </div>
       <h3>Return Policy</h3>
-      <h5> Simply dummy text of <br> the printintypesetting <br> industr.y</h5>
+      <h5> You can return <br> product that is <br>  mistenkly order</h5>
     </div>
 
     <div class="white-box">
@@ -180,7 +198,7 @@
         <img src="./About-img/Natural Food.png" alt="">
       </div>
       <h3>100% Fresh</h3>
-      <h5> Simply dummy text of <br> the printintypesetting <br> industry.</h5>
+      <h5> Our product is <br> 100% fresh and <br>nice.</h5>
     </div>
 
     <div class="white-box">
@@ -188,7 +206,7 @@
         <img src="./About-img/Phone Time.png" alt="">
       </div>
       <h3>Support 24/7</h3>
-      <h5> Simply dummy text of <br> the printintypesetting <br> industry.</h5>
+      <h5> We are always  <br> available 24/7 <br> every day.</h5>
     </div>
 
     <div class="white-box">
@@ -196,7 +214,7 @@
         <img src="./About-img/Card Security.png" alt="">
       </div>
       <h3>Secured Payment</h3>
-      <h5> Simply dummy text of <br> the printintypesetting <br> industry.</h5>
+      <h5> Payment is very <br> secured and  <br> flexible.</h5>
     </div>
    </div> 
   </div>
@@ -333,6 +351,10 @@
       | <span style="color: #274C5B; font-weight: bold;"> VictorFlow</span> 
       Template - Power by  <span style="color: #274C5B;  font-weight: bold;"> WebFlow</span></p>
 </div>
+
+
+<script src="./javascript/bootstrap.min.js"></script>
+<script src="./css/js/script.js"></script>
   
   
 

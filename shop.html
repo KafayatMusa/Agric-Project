@@ -7,16 +7,16 @@
     <title>SHOP PAGE</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./webfonts/">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <nav class="nav"> 
-       <div class="logo">
+    <nav class="nav2"> 
+       <div id="logoHome" class="logo">
          <a href="./mobile.html"><i class="fa fa-bars"></i></a>
-          <img src="./image/Logo.svg" alt="">
+          <img  id="logoImg" src="./image/Logo.svg" alt="">
        </div>
-      <div class="navLinks">
+      <div id="navLinkHome" class="navLinks">
        <ul>
            <li><a class="active" href="index.html">Home</a></li>
            <li><a href="about.html">About</a></li>
@@ -24,7 +24,6 @@
              <div class="dropdown">
                <div class="dropbtn">
                  <button>pages</button><i class="fa-solid fa-angle-down"></i>
-
                </div>
                <div class="dropdown-content">
                  <a href="./portfolio.html">portfolio</a>
@@ -71,9 +70,14 @@
          </div>
       
          <div class="cart">
-          <img src="./image/Cart Icon.png" alt="">
-          <p class="cart1">Cart(0)</p>
-          <p class="cart2">(0)</p>
+           <div class="icon-cart">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+           </svg>
+         </div>
+          <!-- <img src="./image/Cart Icon.png" alt=""> -->
+          <p class="cart1">Cart <span id="addCount"></span></p>
+           <p class="cart2">(0)</p>
          </div>
       
    </nav>
@@ -85,19 +89,30 @@
       <h1>Shop</h1>
    </div>
    </div>
+   <div class="cartTab">
+    <h1>shopping cart</h1>
+    <div class="listCart" id="cart">
+    </div>
+    <div class="btn">
+        <button class="close">close</button>
+        <button class="checkOut">checkout</button>
+       
+    </div>
+    
+  </div>
 
    <div class= "Categories">
     <p>Categories</p>
     <h2>Our product</h2>
     <div class="flex-images">
       <div class="vegetables">
-        <div class="veg">Vegetables</div>
-        <img src="./image/Photo (2)_prev_ui.png" alt="">
-        <h3>Calabrese Broccoli</h3>
+        <div class="veg" id="count-1">add to cart</div>
+        <img id="productImage" src="./image/Photo (2)_prev_ui.png" alt="">
+        <h3 id="productName">Calabrese Broccoli</h3>
         <div class="line"></div>
         <div class="flex-star">
           <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+        <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
          font-size: 15px; margin-left: 10px;"> $13.00</span></h6>
       </div>
       <div id="flex-s">
@@ -110,135 +125,135 @@
       </div>
       </div>
       <div class="vegetables">
-        <div class="veg">Fresh</div>
-        <img src="./image/Photo (3)_prev_ui.png" alt="">
-        <h3>Fresh Banana Friut</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
-         font-size: 15px; margin-left: 10px;"> $14.00</span></h6>
-      </div>
-      <div id="flex-s">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      </div>
-      </div>
-      <div class="vegetables">
-        <div class="veg">Millets</div>
-        <img src="./image/Photo (4)_prev_ui.png" alt="">
-        <h3>White Nuts</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
-         font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
-      </div>
-      <div id="flex-s">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      </div>
-      </div>
-      <div class="vegetables">
-        <div class="veg">Vegetables</div>
-        <img src="./image/[removal.ai]_31ca0d84-5aa2-4736-b8b3-b320128f2c26.png" alt="">
-        <h3>Vegan Red Tomato</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
-         font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
-      </div>
-      <div id="flex-s">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      </div>
-      </div>
+        <div class="veg" id="count-2">add to cart</div>
+      <img src="./image/Photo (3)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Fresh Banana Friut</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span id="productPrice"  style="color:#274C5B; font-weight: bold;
+       font-size: 15px; margin-left: 10px;"> $14.00</span></h6>
+    </div>
+    <div id="flex-s">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
+    </div>
+    <div class="vegetables">
+      <div class="veg" id="count-3">add to cart</div>
+      <img src="./image/Photo (4)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">White Nuts</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
+       font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
+    </div>
+    <div id="flex-s">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
+    </div>
+    <div class="vegetables">
+      <div class="veg" id="count-4">add to cart</div>
+      <img src="./image/[removal.ai]_31ca0d84-5aa2-4736-b8b3-b320128f2c26.png" id="productImage" alt="">
+      <h3 id="productName">Vegan Red Tomato</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
+       font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
+    </div>
+    <div id="flex-s">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
     </div>
 
-    <div class="flex-images">
-      <div class="vegetables">
-        <div class="veg">Health</div>
-        <img src="./image/image 14_prev_ui.png" alt="">
-        <h3>Mung Beans</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
-         font-size: 15px; margin-left: 10px;"> $11.00</span></h6>
-      </div>
-      <div id="flex-s">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      </div>
-  
-      </div>
-      <div class="vegetables">
-        <div class="veg">Nuts</div>
-        <img src="./image/Photo (5)_prev_ui (1).png" alt="">
-        <h3>Brown Hazelnut</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
-         font-size: 15px; margin-left: 10px;"> $12.00</span></h6>
-      </div>
-      <div id="flex-s">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      </div>
-  
-      </div>
-      <div class="vegetables">
-        <div class="veg">Fresh</div>
-        <img src="./image/Photo (6)_prev_ui.png" alt="">
-        <h3>Eggs</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold; 
-        font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
-      </div>
-      <div id="flex-s">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      </div>
-  
-      </div>
-      <div class="vegetables">
-        <div class="veg">Fresh</div>
-        <img src="./image/Photo (7)_prev_ui.png" alt="">
-        <h3>Zelco Suji Elaichi Rusk</h3>
-        <div class="line"></div>
-        <div class="flex-star">
-          <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
-         font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
-      </div>
+  </div>
+  <div class="flex-images">
+    <div class="vegetables">
+      <div class="veg" id="count-5">add to cart</div>
+      <img src="./image/image 14_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Mung Beans</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
+       font-size: 15px; margin-left: 10px;"> $11.00</span></h6>
+    </div>
+    <div id="flex-s">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
+
+    </div>
+    <div class="vegetables">
+      <div class="veg" id="count-6">add to cart</div>
+      <img src="./image/Photo (5)_prev_ui (1).png" id="productImage" alt="">
+      <h3 id="productName">Brown Hazelnut</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
+       font-size: 15px; margin-left: 10px;"> $12.00</span></h6>
+    </div>
+    <div id="flex-s">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
+
+    </div>
+    <div class="vegetables">
+      <div class="veg" id="count-7">add to cart</div>
+      <img src="./image/Photo (6)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Eggs</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span  id="productPrice" style="color:#274C5B; font-weight: bold; 
+      font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
+    </div>
+    <div id="flex-s">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    </div>
+
+    </div>
+    <div class="vegetables">
+      <div class="veg" id="count-8">add to cart</div>
+      <img src="./image/Photo (7)_prev_ui.png" id="productImage" alt="">
+      <h3 id="productName">Zelco Elaichi Rusk</h3>
+      <div class="line"></div>
+      <div class="flex-star">
+        <div>
+      <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
+       font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
+    </div>
       <div id="flex-s">
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -252,8 +267,8 @@
 
     <div class="flex-images">
       <div class="vegetables">
-        <div class="veg">Health</div>
-        <img src="./Shop-img/Photo__16_-removebg-preview.png" alt="">
+        <div class="veg" id="count-8">add to cart</div>
+        <img src="./Shop-img/Photo__16_-removebg-preview.png" id="productImage"  alt="">
         <h3>Calabrese Broccoli</h3>
         <div class="line"></div>
         <div class="flex-star">
@@ -271,13 +286,13 @@
       </div>
       </div>
       <div class="vegetables">
-        <div class="veg">Nuts</div>
-        <img src="./Shop-img/Photo__17_-removebg-preview.png" alt="">
-        <h3>Fresh Banana Friut</h3>
+        <div class="veg" id="count-8">add to cart</div>
+        <img src="./Shop-img/Photo__17_-removebg-preview.png" id="productImage"  alt="">
+        <h3 id="productName">Fresh Banana Friut</h3>
         <div class="line"></div>
         <div class="flex-star">
           <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+        <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
          font-size: 15px; margin-left: 10px;"> $14.00</span></h6>
       </div>
       <div id="flex-s">
@@ -290,13 +305,13 @@
       </div>
       </div>
       <div class="vegetables">
-        <div class="veg">Fresh</div>
-        <img src="./Shop-img/Photo__18_-removebg-preview.png" alt="">
-        <h3>White Nuts</h3>
+        <div class="veg" id="count-8">add to cart</div>
+        <img src="./Shop-img/Photo__18_-removebg-preview.png" id="productImage"  alt="">
+        <h3 id="productName">White Nuts</h3>
         <div class="line"></div>
         <div class="flex-star">
           <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+        <h6 id="productName" ><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
          font-size: 15px; margin-left: 10px;"> $15.00</span></h6>
       </div>
       <div id="flex-s">
@@ -309,13 +324,13 @@
       </div>
       </div>
       <div class="vegetables">
-        <div class="veg">Fresh</div>
-        <img src="./Shop-img/Photo__19_-removebg-preview.png" alt="">
-        <h3>Vegan Red Tomato</h3>
+        <div class="veg" id="count-8">add to cart</div>
+        <img src="./Shop-img/Photo__19_-removebg-preview.png" id="productImage"  alt="">
+        <h3 id="productName" >Vegan Red Tomato</h3>
         <div class="line"></div>
         <div class="flex-star">
           <div>
-        <h6><del>$20.00 </del><span style="color:#274C5B; font-weight: bold;
+        <h6><del>$20.00 </del><span id="productPrice" style="color:#274C5B; font-weight: bold;
          font-size: 15px; margin-left: 10px;"> $17.00</span></h6>
       </div>
       <div id="flex-s">
@@ -398,7 +413,8 @@
   </div>
     
   
-
+  <script src="./javascript/bootstrap.min.js"></script>
+  <script src="./css/js/script.js"></script>
       
 
       
