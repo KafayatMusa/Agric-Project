@@ -176,6 +176,7 @@ svg{
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: bold;
+    margin-left: -10px;
 }
 .choose-background{
     background-image: url(../image/Background\ Patterns\ \(1\).png);
@@ -2890,6 +2891,7 @@ textarea{
 } */
 .cart2{
     display: none;
+    /* margin-left: -50px; */
 }
 .cart1{
     display: block;
