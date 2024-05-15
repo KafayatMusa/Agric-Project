@@ -173,7 +173,7 @@ addToCartButton.forEach(button => {
               // Update cart total based on quantity and price (implement your logic)
           });
 
-          addCartToMemory();
+          // addCartToMemory();
       } else {
           console.log(`Item "${productNameItem}" already exists in the cart.`);
           // count--;
@@ -186,49 +186,49 @@ addToCartButton.forEach(button => {
   });
 });
 // Function to retrieve cart items from local storage
-const getCartFromMemory = () => {
-  const cartItemsData = localStorage.getItem('cart');
-  if (cartItemsData) {
-      return JSON.parse(cartItemsData);
-  } else {
-      return []; // Return an empty array if no cart items are found
-  }
-};
+// const getCartFromMemory = () => {
+//   const cartItemsData = localStorage.getItem('cart');
+//   if (cartItemsData) {
+//       return JSON.parse(cartItemsData);
+//   } else {
+//       return []; // Return an empty array if no cart items are found
+//   }
+// };
 
 // Function to display cart items in the DOM
-const displayCartItems = () => {
-  const cartItemsData = getCartFromMemory();
-  const cartItemContainer = document.getElementById("cart");
+// const displayCartItems = () => {
+//   const cartItemsData = getCartFromMemory();
+//   const cartItemContainer = document.getElementById("cart");
 
-  // Clear existing cart items from the DOM
-  cartItemContainer.innerHTML = '';
+//   // Clear existing cart items from the DOM
+//   cartItemContainer.innerHTML = '';
 
-  // Loop through each cart item data and create DOM elements
-  if(cartItemsData.forEach(cartItemData => {
-    count++;
-    cart.innerHTML = '(' + count + ')';
-      const cartItemElement = document.createElement("div");
-      cartItemElement.classList.add("item");
-      cartItemElement.innerHTML = `
-          <div class="image">
-              <img src="${cartItemData.image}" alt="${cartItemData.name}" id="cartImage">
-          </div>
-          <div class="name" id="cartName">${cartItemData.name}</div>
-          <div class="totalPrice" id="cartPrice">${cartItemData.price}</div>
-          <div class="quantity">
-              <span class="minus" id="cartMinus">-</span>
-              <span id="cartCount">${cartItemData.quantity}</span>
-              <span class="plus" id="cartPlus">+</span>
-          </div>
-      `;
-      cartItemContainer.appendChild(cartItemElement);
-  })){
+//   // Loop through each cart item data and create DOM elements
+//   if(cartItemsData.forEach(cartItemData => {
+//     count++;
+//     cart.innerHTML = '(' + count + ')';
+//       const cartItemElement = document.createElement("div");
+//       cartItemElement.classList.add("item");
+//       cartItemElement.innerHTML = `
+//           <div class="image">
+//               <img src="${cartItemData.image}" alt="${cartItemData.name}" id="cartImage">
+//           </div>
+//           <div class="name" id="cartName">${cartItemData.name}</div>
+//           <div class="totalPrice" id="cartPrice">${cartItemData.price}</div>
+//           <div class="quantity">
+//               <span class="minus" id="cartMinus">-</span>
+//               <span id="cartCount">${cartItemData.quantity}</span>
+//               <span class="plus" id="cartPlus">+</span>
+//           </div>
+//       `;
+//       cartItemContainer.appendChild(cartItemElement);
+//   })){
     
-  };
-};
+//   };
+// };
 
 //Call displayCartItems function when the page loads
-window.addEventListener('load', displayCartItems);
+// window.addEventListener('load', displayCartItems);
 
 
 // let listProducts = [];
@@ -306,34 +306,34 @@ closeCart.addEventListener('click', () =>{
 //     // console.log(carts);
 //     // addToCart();
 // }
-const  addCartToMemory = () => {
-  const cartItemsDOM = document.querySelectorAll(".item");
+// const  addCartToMemory = () => {
+//   const cartItemsDOM = document.querySelectorAll(".item");
 
-  // Create an array to store cart items data
-  const cartItemsData = [];
+//   // Create an array to store cart items data
+//   const cartItemsData = [];
 
-  // Loop through each cart item in the DOM
-  cartItemsDOM.forEach(cartItem => {
-      // Extract relevant data from each cart item
-      const productName = cartItem.querySelector("#cartName").textContent;
-      const productPrice = cartItem.querySelector("#cartPrice").textContent;
-      const productQuantity = cartItem.querySelector("#cartCount").textContent;
-      const productImage = cartItem.querySelector("#cartImage").getAttribute('src');
+//   // Loop through each cart item in the DOM
+//   cartItemsDOM.forEach(cartItem => {
+//       // Extract relevant data from each cart item
+//       const productName = cartItem.querySelector("#cartName").textContent;
+//       const productPrice = cartItem.querySelector("#cartPrice").textContent;
+//       const productQuantity = cartItem.querySelector("#cartCount").textContent;
+//       const productImage = cartItem.querySelector("#cartImage").getAttribute('src');
 
-      // Create an object with cart item data
-      const cartItemData = {
-          name: productName,
-          price: productPrice,
-          quantity: productQuantity,
-          image: productImage
-      };
+//       // Create an object with cart item data
+//       const cartItemData = {
+//           name: productName,
+//           price: productPrice,
+//           quantity: productQuantity,
+//           image: productImage
+//       };
 
-      // Add cart item data to the array
-      cartItemsData.push(cartItemData);
-  });
-  localStorage.setItem('cart', JSON.stringify(cartItemsData));
+//       // Add cart item data to the array
+//       cartItemsData.push(cartItemData);
+//   });
+//   localStorage.setItem('cart', JSON.stringify(cartItemsData));
 
-}
+// }
 // const addCartToHTML = () =>{
 //     listCartHTML.innerHTML = '';
 //     let totalQuantity = 0;

@@ -150,11 +150,11 @@ height: 20px !important;
 .cart{
     background-color: white;
     height: 38px;
-    width: 110px;
+    width: 129px;
     border-radius:17px ;
     border:1px solid lightgray;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 20 px;
     display: flex;
     cursor: pointer;
 }
@@ -167,7 +167,7 @@ svg{
     float:left;
     background-color: #274C5B;
     border-radius: 20px;
-    width: 36px;
+    width: 26px;
     margin-left: 2px;
 }
 .cart p{
@@ -176,7 +176,15 @@ svg{
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: bold;
-    margin-left: -10px;
+    margin-right: -10px;
+}
+#addCount{
+    /* position: absolute; */
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    bottom: -20px;
+    
 }
 .choose-background{
     background-image: url(../image/Background\ Patterns\ \(1\).png);
